@@ -14,7 +14,7 @@ class HomeController extends Controller
           
         if(($dadosFilmes = $filmesDAO->listarFilmes($filtro)) !== false)
         {
-            self::setViewParam('listaDeFilmes',$dadosFilmes);
+            self::setViewParam('listaDeFilmes',$dadosFilmes);  
         }
 
         $parceiroDAO = new \App\Models\DAO\ParceiroDAO();
